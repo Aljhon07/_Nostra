@@ -82,7 +82,7 @@ section.layer {
   width: 95vw;
   height: 84vh;
   margin: auto;
-  padding: 1rem;
+  padding: 0 1rem;
   overflow-y: hidden;
   background-color: var(--secondary-bg);
 }
