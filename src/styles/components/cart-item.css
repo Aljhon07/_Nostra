@@ -9,3 +9,16 @@
     height: 150px;
     object-fit: contain;
 }
+
+.cart-item .details div {
+    display: flex ;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cart-item .remove-btn {
+    background-color: red;
+    align-self: start;
+    color: white;
+    padding: .5rem 1rem
+}
