@@ -31,7 +31,6 @@ export function initReview() {
             <button class="next-btn check-out">Check Out</button>
         </section>
     `
-
     return [content, cb]
 }
 
