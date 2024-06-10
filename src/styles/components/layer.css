@@ -1,0 +1,19 @@
+.layer {
+    position: relative;
+}
+.layer > button {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: .5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: start;
+    padding: .75rem 0 ;
+}
+
+.layer button img {
+    width: 24px;
+    height: 24px;
+}

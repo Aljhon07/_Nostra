@@ -1,0 +1,53 @@
+.shipping-info form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.shipping-info input {
+    padding: .5rem .25rem;
+    border-radius: .5rem;
+}
+
+.shipping-info .container {
+    display: flex;
+    gap: 1rem;
+}
+
+section.cart .shipping-info .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.shipping-info select {
+    background-color: black;
+    padding: .25rem ;
+}
+
+.shipping-info .courier-price {
+    background-color: white;
+    padding: .5rem;
+    display: flex;
+    gap: 1rem;
+    border-radius: .5rem;
+}
+
+.shipping-info .courier {
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-info .courier-price > * {
+    flex: 1;
+}
+
+.courier-price * {
+    color: black;
+}
+
+.courier select {
+    color: white;
+}

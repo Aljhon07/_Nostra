@@ -1,0 +1,94 @@
+.product-group {
+  background-color: var(--secondary-bg);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.product-group .left {
+  margin-bottom: 0.75rem;
+  text-align: start;
+}
+
+.product-group .right {
+  margin-bottom: 0.75rem;
+  text-align: end;
+}
+
+.products {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.products > .product-card {
+  flex-basis: calc(20% - 1rem);
+  min-width: 190px;
+  flex-grow: 1;
+  text-align: center;
+  border: solid var(--main-bg) 1px;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.product-card:hover {
+  scale: 1.05;
+  box-shadow: 0px 1px 10px 1px rgba(45, 45, 45, 0.492);
+
+}
+.product-card > a {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  overflow: hidden;
+}
+.product-card picture {
+  position: relative;
+  z-index: 100;
+  display: block;
+  height: 150px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.product-card img {
+  background-color: var(--product-img-clr);
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-card .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card .wrapper h5 {
+  width: 100%;
+  max-width: 155px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.5rem 0;
+}
+
+#truck-1,
+#truck-2 {
+  position: absolute;
+}
+.product-group #truck-1 {
+  width: 100px;
+  left: -75px;
+}
+
+.product-group #truck-2 {
+  width: 180px;
+  right: -100px;
+  top: -50px;
+}

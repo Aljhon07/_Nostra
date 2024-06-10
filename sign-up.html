@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/base.css" />
+    <link rel="stylesheet" href="../src/styles/auth.css" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    header h1 {
+      text-align: end;
+    }
+    .name-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    .name-wrapper > * {
+      flex: 1;
+    }
+    .container a:not(li > a) {
+      background-color: var(--main-bg);
+      padding: 0.5rem 1.25rem;
+    }
+    .container .greetings h1 {
+      margin: 0.5rem 0;
+      font-size: 1.75rem;
+      color: black;
+    }
+    .contaienr .greetings a {
+      color: var(--text-2);
+    }
+    form {
+      background-color: white;
+    }
+    form > a {
+      text-align: center;
+      margin: 0.5rem 0;
+      display: block;
+    }
+    form button {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    form h1,
+    label,
+    p {
+      color: var(--main-bg);
+    }
+  </style>
+  <body>
+    <header><h1>NOSTRA</h1></header>
+    <div class="container">
+      <div class="greetings">
+        <h1>Already Have an Account?</h1>
+        <a href="/sign-in.html">Sign In</a>
+      </div>
+
+      <form action="">
+        <p>Create An Account</p>
+        <div class="name-wrapper input-wrapper">
+          <div class="input-wrapper">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" />
+          </div>
+          <div class="input-wrapper">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="input-wrapper">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="input-wrapper">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+          />
+        </div>
+
+        <a href="/#">Sign Up</a>
+        <br />
+        <div class="alt">
+          <p>or, use social media to sign up.</p>
+          <ul>
+            <li>
+              <a href=""><img src="./assets/socials/google.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./assets/socials/github.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./assets/socials/facebook.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault()
+        localStorage.setItem('auth', JSON.stringify('true'))
+        location.href = "#/";
+      });
+    </script>
+  </body>
+</html>

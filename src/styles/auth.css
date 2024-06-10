@@ -1,0 +1,57 @@
+header {
+  padding: 1rem;
+  font-weight: bold;
+}
+header > h1 {
+    font-weight: bolder;
+}
+h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+h4 {
+  font-weight: 500;
+}
+input {
+  background-color: #bfbfbf;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.alt {
+  text-align: center;
+}
+.alt ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.container {
+  display: flex;
+  padding: 0 3rem;
+}
+
+.container > * {
+  flex: 1;
+  padding: 1rem;
+}
+.container .greetings {
+  background-color: rgba(210, 210, 210, 0.374);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form > p {
+    font-size: 1.75rem;
+    padding: 1rem 0;
+}

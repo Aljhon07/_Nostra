@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --main-bg: #003135;
+  --secondary-bg: #964734;
+  --product-image-clr: rgba(73, 73, 73, 0.089);
+  --feat-categories-clr: #A8A6AD;
+  --text-2: #d9d9d9;
+  --header-clr: #011c1f;
+  --max-screen: clamp(0px, 100vw, 1366px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+input {
+  color: black;
+  outline: none;
+}
+
+input[type="number"]{
+  width: 40px;
+}
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bolder;
+}
+button {
+  background-color: var(--secondary-bg);
+  border: none;
+  cursor: pointer;
+}
+html {
+  font-family: "Outfit", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  background: var(--main-bg);
+}
+body {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1366px;
+  min-height: 100vh;
+  position: relative;
+
+}
+
+body > header {
+  position: relative;
+  background-color: transparent;
+}
+
+
+#app {
+  width: var(--max-screen);
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%; 
+}
+
+section.layer {
+  width: 95vw;
+  height: 84vh;
+  margin: auto;
+  padding: 1rem;
+  overflow-y: hidden;
+  background-color: var(--secondary-bg);
+}
+
+.next-btn {
+  background-color: green;
+  padding: .75rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+}

@@ -1,0 +1,11 @@
+.cart-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-item img{
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}

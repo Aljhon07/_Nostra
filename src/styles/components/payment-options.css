@@ -1,0 +1,24 @@
+.payment-options  {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-options .option-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: .5rem;
+}
+
+.payment-options .option-wrapper img {
+    background-color: unset;
+    min-width: unset;
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+}
+
+.payment-options button {
+    padding: .5rem;
+    background-color: green;
+}
