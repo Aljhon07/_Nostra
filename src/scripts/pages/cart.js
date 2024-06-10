@@ -6,13 +6,19 @@ import { initShippingInfo } from "../components/shippingInfo.js";
 
 let _layerCb, _shippingInfoCb, _paymentOptionsCb, _reviewCb;
 let _shippingInfoContent, _paymentOptionsContent, _reviewContent;
+let cartItemCb;
 export function initCart() {
     let cartItems;
     if(!localStorage.getItem('cart')){
         cartItems = "No Items to show"
     }else {
         const items = JSON.parse(localStorage.getItem('cart'))
-        cartItems = items.map(item => initCartItem(item)).join("")
+        cartItems = items.map(item => {
+                const [content, cb] = initCartItem(item)
+                cartItemCb = cb;
+                return content;
+            }
+        ).join("")
     
         const [shippingInfoContent, shippingInfoCb] = initShippingInfo();
         _shippingInfoCb = shippingInfoCb;
@@ -66,9 +72,8 @@ function cb() {
 
     _layerCb()
     _shippingInfoCb(userInfoEl)
-
- 
-
+    cartItemCb()
+    
     stepButtons.forEach((btn, index) => {
         btn.addEventListener('click', () => {
             userInfoEl.innerHTML = components[index]
