@@ -3,7 +3,7 @@ header {
   font-weight: bold;
 }
 header > h1 {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 h1 {
   font-size: 2.25rem;
@@ -52,6 +52,35 @@ input {
 }
 
 form > p {
-    font-size: 1.75rem;
-    padding: 1rem 0;
+  font-size: 1.75rem;
+  padding: 1rem 0;
+}
+
+.container .wrapper h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container.sign-in > :first-child {
+    order: 2;
+  }
+  .container .wrapper {
+    width: 80%;
+  }
+
+  .container .wrapper h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .greetings .wrapper {
+    margin: .5rem 0 1rem 0;
+  }
 }
