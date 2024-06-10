@@ -54,6 +54,16 @@ footer .page-links, footer .socials {
     text-align: start;
 }
 
+footer .page-links, footer .socials > * {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+footer .page-links, footer .socials img {
+    height: 24px;
+}
 
 @media only screen and (max-width: 800px) {
     footer .misc {

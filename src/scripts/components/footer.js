@@ -21,10 +21,10 @@ export function initFooter() {
             <div class="wrapper">
                 <h2>FOLLOW US</h2>
                 <ul class="socials">
-                    <li><img src="" alt="Facebook"></li>
-                    <li><img src="" alt="Twitter"></li>
-                    <li><img src="" alt="Instagram"></li>
-                    <li><img src="" alt="LinkedIn"></li>
+                    <li><img src="../../../assets/socials/facebook.svg" alt="Facebook"> Facebook</li>
+                    <li><img src="../../../assets/socials/twitter.png" alt="Twitter">Twitter</li>
+                    <li><img src="../../../assets/socials/instagram.png" alt="Instagram">Instagram</li>
+                    <li><img src="../../../assets/socials/linkedin.png" alt="LinkedIn">LinkedIn</li>
                 </ul>
             </div>
 
