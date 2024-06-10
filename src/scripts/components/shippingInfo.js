@@ -54,7 +54,7 @@ function cb(userInfoEl) {
     const totalPrice = JSON.parse(localStorage.getItem("totalPrice")).toFixed(2)
     const merchTotal = $('.merchandise-total')
     const subTotal = $('.sub-total')
-    subTotal.innerText = parseFloat(totalPrice) + 40
+    subTotal.innerText = "P" + (parseFloat(totalPrice) + 40);
     merchTotal.innerText = totalPrice;
 
     const stepButtons = $all('.personal-details header button .step')

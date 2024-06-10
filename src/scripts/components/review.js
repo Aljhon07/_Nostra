@@ -1,6 +1,6 @@
 export function initReview() {
     const userInfo = JSON.parse(localStorage.getItem('shippingInfo'))
-    const paymentOption = JSON.parse(localStorage.getItem('paymentOption'))
+    const paymentOption = JSON.parse(localStorage.getItem('paymentOption')) || 'Cash On Delivery'
 
     const acc = paymentOption === "Credit Card" ? "1234 5678 9876 5432" : 'demoaccount@email.com'
     console.log(userInfo)
@@ -18,13 +18,13 @@ export function initReview() {
                 <legend>Shipping Details</legend>
                 <div class="shipping-details">
                     <p><strong>Courier: </strong>J&T Express</p>
-                    <p><strong>Sub Total: P</strong>${userInfo.subTotal}</p>
+                    <p><strong>Sub Total: </strong>${userInfo.subTotal}</p>
                 </div>
             </fieldset>
              <fieldset>
                 <legend>Payment</legend>
                 <div class="payment">
-                    <p><strong>Mode of Payment: </strong></p>
+                    <p><strong>Mode of Payment: </strong>${paymentOption}</p>
                     <p><strong>Account Name / Number: </strong>${acc}</p>
                 </div>
             </fieldset>
